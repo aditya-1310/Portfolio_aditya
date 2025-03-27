@@ -27,13 +27,7 @@ Check out my portfolio live here: [**Portfolio Website**](https://your-portfolio
 
 ---
 
-## 📸 Screenshots
 
-| Light Mode | Dark Mode |
-|------------|------------|
-| ![Light Mode](https://your-image-link.com) | ![Dark Mode](https://your-image-link.com) |
-
----
 
 ## 🚀 How to Run Locally
 

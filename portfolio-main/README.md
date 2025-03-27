@@ -1,6 +1,6 @@
 # 🚀 Aditya Bhadade - Portfolio
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a **Full Stack Developer**. Built with modern technologies, it reflects my expertise in frontend and backend development.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a Full Stack Developer. Built with modern technologies, it reflects my expertise in frontend and backend development.
 
 ## 🌐 Live Preview
 

@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// Removing next/font import to avoid Babel/SWC conflict
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aditya's Portfolio",
@@ -21,7 +19,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/a.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

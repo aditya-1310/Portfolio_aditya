@@ -1,8 +1,16 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  // Add transpilePackages for Three.js related packages
+  transpilePackages: ['three'],
+};
 
-export default withSentryConfig(nextConfig, {
+// Only use Sentry if SENTRY_AUTH_TOKEN is available (e.g. in production)
+const useSentry = process.env.SENTRY_AUTH_TOKEN !== undefined;
+
+// Export the config with or without Sentry
+export default useSentry
+  ? withSentryConfig(nextConfig, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -37,4 +45,5 @@ disableLogger: true,
 // https://docs.sentry.io/product/crons/
 // https://vercel.com/docs/cron-jobs
 automaticVercelMonitors: true,
-});
+})
+: nextConfig;

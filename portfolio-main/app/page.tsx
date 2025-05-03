@@ -1,13 +1,18 @@
 "use client";
 
 import { navItems } from "@/data";
+import { isBrowser } from "@/lib/helpers";
+import dynamic from "next/dynamic";
 
-import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
+// Regular import for non-3D components
 import Footer from "@/components/Footer";
-import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import RecentProjects from "@/components/RecentProjects";
+
+// Dynamically import components that might use browser APIs
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
+const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
+const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
+const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
+const RecentProjects = dynamic(() => import("@/components/RecentProjects"), { ssr: false });
 
 const Home = () => {
   return (

@@ -76,7 +76,7 @@ export const projects = [
     des: "A modern real estate platform for seamless property listing and exploration, built with the MERN stack.",
     img: "/p.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongo.svg", "/node.svg"],
-    link: "https://estate-rmjs.onrender.com/",
+    link: "https://estate-ahv7.onrender.com/",
   },
   {
     id: 2,
